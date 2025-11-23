@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Page</title>
+    <link rel="stylesheet" href="order.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Place Your Order</h1>
+        <form id="orderForm">
+            <label for="name">Name:</label>
+            <input type="text" id="name" placeholder="Enter your name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" placeholder="Enter your email" required>
+
+            <label for="product">Product:</label>
+            <select id="product" required>
+                <option value="">Select a product</option>
+                <option value="Beef Burger">Beef Burger</option>
+                <option value="Chicken Burger">Chicken Burger</option>
+                <option value="Veggie Burger">Veggie Burger</option>
+                <option value="Double Cheese">Double Cheese</option>
+                <option value="Special Beef Combo">Special Beef Combo</option>
+                <option value="Crispy Chicken Pack">Crispy Chicken Pack</option>
+                <option value="Fresh Juice Bottle">Fresh Juice Bottle</option>
+                <option value="Family Meal">Family Meal</option>
+            </select>
+
+            <label for="quantity">Quantity:</label>
+            <input type="number" id="quantity" min="1" value="1" required>
+
+            <button type="submit">Submit Order</button>
+        </form>
+
+        <div id="orderSummary" class="hidden">
+            <h id="orderSummary">Order Summary</h2>
+            <p id="summaryText"></p>
+        </div>
+    </div>
+
+<script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init("gb7640txelYdz_EOjgxvh"); // Replace with your Public Key
+   })();
+</script>
+
+
+
+
+
+
+
+
+
+
+    <script src="order.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+

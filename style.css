@@ -1,0 +1,381 @@
+/* GENERAL RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Poppins, sans-serif;
+}
+
+body {
+    background: #fafafa;
+    color: #222;
+}
+
+/* HEADER */
+.header {
+    width: 100%;
+    padding: 22px 8%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    font-size: 28px;
+    font-weight: 700;
+    color: #00ff2a;
+}
+#lg {
+    margin-right: 845px;
+    height: 47px;
+}
+
+.logo span {
+    color: #ff7300;
+}
+/* Large Star */
+#sbp {
+    height: 250px;
+    width: 250px;
+    margin-bottom: 1px;
+    margin-top: 0px;
+    margin-left: 60px;
+}
+
+/* ######## */
+.nav a {
+    margin: 0 12px;
+    text-decoration: none;
+    color: #000000;
+    font-weight: 500;
+}
+
+.nav-btn {
+    padding: 10px 20px;
+    background: #00ff1a;
+    border: none;
+    border-radius: 8px;
+    color: #fff;
+    cursor: pointer;
+}
+/* Hero Section */
+.hero {
+    position: relative;
+    padding: 80px 8%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: linear-gradient(to bottom right, #ff9500, #00ff1af0);
+    border-bottom-left-radius: 200px;
+    border-bottom-right-radius: 200px;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+}
+.hero-text {
+    max-width: 45%;
+}
+.hero-text h1 {
+    font-size: 48px;
+    font-weight: 800;
+}
+
+.hero-text p {
+    margin: 20px 0;
+    font-size: 18px;
+    color: #333;
+}
+
+.big-btn {
+    padding: 13px 30px;
+    background: #ff5533;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+}
+.hero-img img {
+    width: 500px;
+    max-width: 100%;
+    margin-right: 445px;
+}
+
+/* Floating images */
+.float-img {
+    position: absolute;
+    width: 120px;
+}
+
+.img1 { top: 30%; left: 1%; }
+.img2 { top: 10%; right: 8%; }
+.img3 { bottom: 2%; left: 19%; }
+.img4 { bottom: 5%; right: 18%; }
+
+/* DISHES */
+.dishes {
+    padding: 70px 8%;
+    text-align: center;
+}
+
+.dishes-grid {
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+}
+
+.card {
+    background: white;
+    padding: 20px;
+    border-radius: 18px;
+    box-shadow: 0 4px 18px rgba(0, 0, 0, 0.650);
+    transition: .3s;
+}
+
+.card img {
+    width: 100%;
+}
+
+.card:hover {
+    transform: translateY(-30px);
+}
+/* MENU SECTION */
+.menu {
+    padding: 70px 8%;
+}
+.menu-grid {
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+}
+.menu-item {
+    display: flex;
+    background: white;
+    padding: 18px;
+    border-radius: 18px;
+    align-items: center;
+    transition: .4s;
+    box-shadow: 0 4px 18px rgba(0, 0, 0, 0.65);
+    
+}
+.menu-item:hover {
+    transform: translateY(-20px);
+}
+
+.menu-item img {
+    width: 95px;
+    margin-right: 20px;
+}
+
+.menu-item .text {
+    flex: 1;
+    display: flex;
+    justify-content: space-between;
+    font-size: 18px;
+}
+
+/* ===== GENERAL SECTION STYLING ===== */
+section {
+    padding: 60px 10%;
+}
+
+section h2 {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+/* ===== VIDEO SECTION ===== */
+.promo-video .video-container {
+    width: 100%;
+    max-width: 900px;
+    margin: auto;
+    aspect-ratio: 16 / 9;
+}
+
+.promo-video iframe {
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    box-shadow: 0 4px 18px rgba(0, 0, 0, 0.712);
+    transition: .5s;
+}
+.promo-video iframe:hover {
+    transform: translateY(-8px);
+}
+
+/* ===== TESTIMONIALS ===== */
+.testimonial-cards {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.testimonial-card {
+    width: 300px;
+    background: #fff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 18px rgba(0, 0, 0, 0.491);
+    text-align: center;
+    transition: .5s;
+}
+.testimonial-card:hover {
+    transform: translateY(-20px);
+}
+
+.testimonial-card .stars {
+    font-size: 20px;
+    color: orange;
+}
+/* ===== HOURS & LOCATION ===== */
+.hours-location-grid {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.hours, .location {
+    flex: 1;
+    min-width: 280px;
+}
+#h {
+    font-size: xx-large;
+}
+
+.map iframe {
+    width: 100%;
+    height: 260px;
+    border: none;
+    border-radius: 20px;
+}
+
+/* ===== CONTACT FORM ===== */
+.contact-form form {
+    max-width: 600px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.contact-form input,
+.contact-form textarea {
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    width: 100%;
+}
+
+.contact-form button {
+    background: black;
+    color: white;
+    padding: 15px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.form-status {
+    text-align: center;
+    margin-top: 10px;
+}
+
+/* ===== ABOUT US ===== */
+.about-us p {
+    max-width: 800px;
+    margin: auto;
+    text-align: center;
+    line-height: 1.7;
+}
+
+/* ===== GALLERY ===== */
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 15px;
+}
+
+.gallery-grid img {
+    width: 100%;
+    border-radius: 12px;
+    object-fit: cover;
+    transition: .3s;
+    box-shadow: 0px 0px rgba(0, 0, 0, 0.473);
+}
+.gallery {
+    margin-left: 79px;
+    text-align: center;
+    transition: .3s;
+    box-shadow: 0px 0px rgba(0, 0, 0, 0.473);
+}
+.gallery-grid img:hover {
+    transform: translateY(-10);
+}
+#ig {
+    text-align: center;
+    margin-right: 64px;
+}
+#g2 {
+    height: 165px;
+}
+
+/* ===== SPECIAL OFFERS ===== */
+.offers-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.offer-card {
+    width: 280px;
+    padding: 20px;
+    background: #fff;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 4px 18px rgba(0, 0, 0, 0.712);
+    transition: .4s;
+}
+.offer-card:hover {
+    transform: translateY(-30);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* FOOTER */
+.footer {
+    padding: 40px;
+    text-align: center;
+    font-size: 14px;
+    color: #777;
+}
